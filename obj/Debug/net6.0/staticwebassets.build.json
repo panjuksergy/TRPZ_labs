@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "UaRaLmNIjzKj7BepkXyo87kGeCxlhZ+JzbA+a9undtw=",
+  "Source": "EcoMonitoringService",
+  "BasePath": "_content/EcoMonitoringService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

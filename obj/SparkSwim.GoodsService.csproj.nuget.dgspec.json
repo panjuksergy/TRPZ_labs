@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/elainezirael/SparkSwimREPO/SparkSwimTest/SparkSwim/server/GoodsService/SparkSwim.GoodsService.csproj": {}
+  },
+  "projects": {
+    "/home/elainezirael/SparkSwimREPO/SparkSwimTest/SparkSwim/server/GoodsService/SparkSwim.GoodsService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/elainezirael/SparkSwimREPO/SparkSwimTest/SparkSwim/server/GoodsService/SparkSwim.GoodsService.csproj",
+        "projectName": "SparkSwim.GoodsService",
+        "projectPath": "/home/elainezirael/SparkSwimREPO/SparkSwimTest/SparkSwim/server/GoodsService/SparkSwim.GoodsService.csproj",
+        "packagesPath": "/home/elainezirael/.nuget/packages/",
+        "outputPath": "/home/elainezirael/SparkSwimREPO/SparkSwimTest/SparkSwim/server/GoodsService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/elainezirael/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0-preview.5.23280.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/current/sdk/6.0.411/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

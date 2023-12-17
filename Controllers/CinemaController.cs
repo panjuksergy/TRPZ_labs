@@ -5,15 +5,16 @@ using SparkSwim.GoodsService.Goods.Models;
 using SparkSwim.GoodsService.Interfaces;
 
 namespace SparkSwim.GoodsService.Controllers;
-    
+
 public class CinemaController : BaseController
 {
     private readonly UnitOfWork _cinemaUnitOfWork;
+
     public CinemaController(UnitOfWork cinemaUnitOfWork)
     {
         _cinemaUnitOfWork = cinemaUnitOfWork;
     }
-    
+
     [HttpGet("GetAllProdForCinema")]
     public async Task<ActionResult> GetAllProdForCinema(string cinema)
     {
@@ -62,6 +63,13 @@ public class CinemaController : BaseController
         var result = await _cinemaUnitOfWork.GetMoviesByCinema(cinemaName);
         return Ok(result);
     }
-    
-    
+
+    [HttpPost("assignProdToAnoterCinema")]
+    public async Task<ActionResult> AssignCinemaProdsToAnotherCinema(CinemaProd cinemaProd, string newCinemaName)
+    {
+        _cinemaUnitOfWork.AssignCinemaProdsToAnotherCinema(new List<CinemaProd> { cinemaProd }, newCinemaName);
+        return Ok();
+    }
+
+
 }

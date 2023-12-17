@@ -9,7 +9,7 @@ public class Movie
     public int Year { get; set; }
     public DateTime CreationDate { get; set; }
     public string Director { get; set; }
-    public Guid CinemaProdId { get; set; }
+    public Guid? CinemaProdId { get; set; }
     public Genre Genre { get; set; }
     public bool IsDeleted { get; set; }
 }

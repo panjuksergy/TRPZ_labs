@@ -52,3 +52,8 @@ void Configure(IApplicationBuilder app)
     app.UseAuthorization();
     app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
 }
+
+public partial class Program
+{
+    
+}

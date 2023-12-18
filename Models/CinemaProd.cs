@@ -9,3 +9,9 @@ public class CinemaProd
     public string AssignCinema { get; set; }
     public bool IsDeleted { get; set; }
 }
+
+public class CinemaProdUpdateDTO
+{
+    public CinemaProd CinemaProd { get; set; }
+    public string NewAssignCinema { get; set; }
+}

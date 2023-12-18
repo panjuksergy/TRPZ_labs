@@ -64,10 +64,11 @@ public class CinemaController : BaseController
         return Ok(result);
     }
 
-    [HttpPost("assignProdToAnoterCinema")]
-    public async Task<ActionResult> AssignCinemaProdsToAnotherCinema(CinemaProd cinemaProd, string newCinemaName)
+    [HttpPost("assignProdToAnotherCinema")]
+    public async Task<ActionResult> AssignCinemaProdsToAnotherCinema([FromBody]CinemaProdUpdateDTO cinemaProdUpdateDto)
     {
-        _cinemaUnitOfWork.AssignCinemaProdsToAnotherCinema(new List<CinemaProd> { cinemaProd }, newCinemaName);
+        _cinemaUnitOfWork.AssignCinemaProdsToAnotherCinema(new List<CinemaProd> { cinemaProdUpdateDto.CinemaProd }, cinemaProdUpdateDto.NewAssignCinema);
+        await _cinemaUnitOfWork.SaveChangesAsync(CancellationToken.None);
         return Ok();
     }
 
